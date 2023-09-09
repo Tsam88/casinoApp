@@ -1,0 +1,49 @@
+<div class="container mx-auto flex justify-center items-center pt-8 mt-8">
+    <div class="lg:w-1/2 w-4/5">
+        <h1 class="font-hairline mb-6 text-center text-lg">
+            Create Menu Item
+        </h1>
+
+        <div class="border-primary p-8 border-t-8 bg-white mb-6 rounded-lg shadow-lg">
+
+            <form action="javascript:saveMenuItem()">
+                <div class="mb-4">
+                    <label class="font-bold text-grey-darker block mb-2">
+                        Name
+                    </label>
+                    
+                    <input id="name" name="name" type="text" placeholder="Name" value="" required
+                        class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" />
+                </div>
+                <div class="mb-4">
+                    <label class="font-bold text-grey-darker block mb-2">
+                        Url
+                    </label>
+                    <input id="url" name="url" type="text" placeholder="Url" value="" required
+                            class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" />
+                </div>
+                <div class="mb-4">
+                    <label class="font-bold text-grey-darker block mb-2">
+                        Order
+                    </label>
+                    <input id="order" name="order" type="number" min="1" placeholder="order" value="" required
+                            class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" />
+                </div>
+
+                <div class="pt-4 mt-6 rounded bg-white">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
+                        Save
+                    </button>
+                    
+                    <button onclick="goToMenuItemsList()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="~/js/MenuItemsForm.js"></script>

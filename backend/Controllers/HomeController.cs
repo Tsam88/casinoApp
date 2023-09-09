@@ -12,53 +12,60 @@ namespace Docker.NetCore.MySql.Controllers
 {
     public class HomeController : Controller
     {
-        // private readonly MySqlDbContext _context;
+        private readonly MySqlDbContext _context;
 
-        // public HomeController(MySqlDbContext context)
-        // {
-        //     _context = context;
-        // }
+        public HomeController(MySqlDbContext context)
+        {
+            _context = context;
+        }
 
-        // public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index()
+        {
+            List<MenuItem> menuItems = await _context.MenuItems.ToListAsync();
+            return View(menuItems);
+        }
+
+
+        // GET: /HelloWorld/
+        // public string Index()
         // {
-        //     List<MenuItem> menuItems = await _context.MenuItems.ToListAsync();
-        //     return View(menuItems);
+        //     return "This is my default action...";
         // }
         
-        public IActionResult Index()
-        {
-            return View();
-        }
+        // public IActionResult Index()
+        // {
+        //     return View();
+        // }
 
-        public IActionResult Menu()
-        {
-            // MenuItem menu = new MenuItem();
+        // public IActionResult Menu()
+        // {
+        //     // MenuItem menu = new MenuItem();
 
-            // var items = menu.id;
+        //     // var items = menu.id;
 
-            // var menuItem = await _context.MenuItems.SingleOrDefaultAsync(m => m.Id == 1);
+        //     // var menuItem = await _context.MenuItems.SingleOrDefaultAsync(m => m.Id == 1);
 
-            // var items = Data.MySqlDbContext.MenuItems.Take(1).Select(m => new MenuItem{ Id = m.Id }).ToList();
+        //     // var items = Data.MySqlDbContext.MenuItems.Take(1).Select(m => new MenuItem{ Id = m.Id }).ToList();
 
 
-            ViewData["Message"] = "items";
+        //     ViewData["Message"] = "items";
 
-            return View();
-        }
+        //     return View();
+        // }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
+        // public IActionResult About()
+        // {
+        //     ViewData["Message"] = "Your application description page.";
 
-            return View();
-        }
+        //     return View();
+        // }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
+        // public IActionResult Contact()
+        // {
+        //     ViewData["Message"] = "Your contact page.";
 
-            return View();
-        }
+        //     return View();
+        // }
 
         public IActionResult Error()
         {

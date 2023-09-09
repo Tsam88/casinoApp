@@ -32,7 +32,7 @@ services:
     ports:
       - "3306:3306"
     environment:
-      - MYSQL_DATABASE=example2
+      - MYSQL_DATABASE=casino
       - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db-password
 
   proxy:

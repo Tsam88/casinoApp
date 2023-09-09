@@ -1,0 +1,89 @@
+<div class="container mx-auto flex justify-center items-center pt-8 mt-8">
+    <div class="lg:w-1/2 w-4/5">
+        <h1 class="font-hairline mb-6 text-center text-lg">
+            Create Bookmaker
+        </h1>
+
+        <div class="border-primary p-8 border-t-8 bg-white mb-6 rounded-lg shadow-lg">
+
+            <form action="javascript:saveBookmaker()">
+                <div class="mb-4">
+                    <label class="font-bold text-grey-darker block mb-2">
+                        Name
+                    </label>
+                    
+                    <input id="name" name="name" type="text" placeholder="Name" value="" required
+                        class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" />
+                </div>
+                <div class="mb-4">
+                    <label class="font-bold text-grey-darker block mb-2">
+                        Code
+                    </label>
+                    
+                    <input id="code" name="code" type="text" placeholder="Code" value="" required
+                        class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" />
+                </div>
+                <div class="mb-4">
+                    <label class="font-bold text-grey-darker block mb-2">
+                        Button Text
+                    </label>
+                    
+                    <input id="buttonText" name="buttonText" type="text" placeholder="Button Text" value="" required
+                        class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" />
+                </div>
+                <div class="mb-4">
+                    <label class="font-bold text-grey-darker block mb-2">
+                        Description
+                    </label>
+                    <input id="description" name="description" type="text" placeholder="Description" value="" required
+                            class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" />
+                </div>
+                <div class="mb-4">
+
+
+                    <label
+                    for="logo"
+                    class="mb-2 inline-block text-neutral-700 dark:text-neutral-200"
+                    >Logo</label
+                    >
+                    <input
+                    class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary"
+                    type="file"
+                    id="logo" required/>
+
+                    @* <label class="font-bold text-grey-darker block mb-2">
+                        Logo
+                    </label>
+                    <input id="logo" name="logo" type="text" placeholder="Logo" value="" required
+                            class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" /> *@
+                </div>
+                <div class="mb-4">
+                    <label class="font-bold text-grey-darker block mb-2">
+                        Url
+                    </label>
+                    <input id="url" name="url" type="text" placeholder="Url" value="" required
+                            class="text-sm sm:text-base relative w-full border rounded placeholder-gray-400 focus:border-indigo-400 focus:outline-none py-2 pr-2 pl-4" />
+                </div>
+                <div class="mb-4">
+                    <label class="inline-flex items-center">
+                        Primary
+                        <input id="primary" type="checkbox" class="ml-2 form-radio text-indigo-600"/>
+                    </label>
+                </div>
+                <div class="pt-4 mt-6 rounded bg-white">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
+                        Save
+                    </button>
+                    
+                    <button onclick="goToBookmakersList()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+                    
+        </div>
+
+    </div>
+</div>
+
+<script src="~/js/BookmakersForm.js"></script>

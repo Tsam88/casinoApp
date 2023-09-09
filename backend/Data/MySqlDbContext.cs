@@ -11,10 +11,12 @@ namespace Docker.NetCore.MySql.Data
         }
 
         public DbSet<MenuItem> MenuItems { get; set; }
+        public DbSet<Bookmaker> Bookmakers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<MenuItem>().ToTable("MenuItem");
+            modelBuilder.Entity<Bookmaker>().ToTable("Bookmaker");
         }
     }
 }

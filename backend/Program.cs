@@ -54,8 +54,46 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// app.UseAuthorization();
+app.UseAuthorization();
 
 app.MapRazorPages();
+
+// app.MapGet("/", (MySqlConnection connection) => {
+//     var titles = new List<string>();
+
+//     try
+//     {
+//         Console.WriteLine("Connecting to MySQL...");
+//         connection.Open();
+
+//         string sql = "SELECT title FROM MenuItem";
+//         using var cmd = new MySqlCommand(sql, connection);
+//         using MySqlDataReader reader = cmd.ExecuteReader();
+
+//         while (reader.Read())
+//         {
+//             titles.Add(reader.GetString(0));
+//         }
+//         reader.Close();
+//     }
+//     catch (Exception ex)
+//     {
+//         return Results.Problem(detail: ex.ToString());
+//     }
+//     connection.Close();
+    
+//     return Results.Ok(titles);
+// });
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// app.MapPageRoute(
+//     name: "default",
+//     pattern: "{page=Home}/{action=Index}/{id?}");
+
+
+// app.MapGet("/", () => View("~/Views/Home/index.cshtml"));
 
 app.Run();

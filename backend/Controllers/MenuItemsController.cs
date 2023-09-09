@@ -24,7 +24,7 @@ namespace Docker.NetCore.MySql.Controllers
         [HttpGet]
         public IEnumerable<MenuItem> GetMenuItem()
         {
-            return _context.MenuItems;
+            return _context.MenuItems.OrderBy(m => m.Order);
         }
 
         // GET: api/MenuItems/5
@@ -89,6 +89,8 @@ namespace Docker.NetCore.MySql.Controllers
             {
                 return BadRequest(ModelState);
             }
+    
+            // Console.WriteLine(menuItem);
 
             _context.MenuItems.Add(menuItem);
             await _context.SaveChangesAsync();
