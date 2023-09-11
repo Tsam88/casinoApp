@@ -34,40 +34,40 @@ namespace Docker.NetCore.MySql.Data
             {
                 new Bookmaker{
                     Name="Unibet Casino",
-                    Code="GG11AB76GH98P0007QQ",
+                    Code="GG11AB76GH",
                     Price=99.99M,
                     ButtonText="Activate Bonus",
-                    Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+                    Description="Lorem ipsum dolor sit amet, consectetur.",
                     // Logo="/wwwroot/images/unibet_casino.png",
                     Url="https://wavefitnessproject.gr/",
                     Primary=false
                 },
                 new Bookmaker{
                     Name="Paddypower Casino",
-                    Code="GG11AB76GH98P0007QQ",
+                    Code="GG11AB76GH",
                     Price=500,
                     ButtonText="Activate Bonus",
-                    Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+                    Description="Lorem ipsum dolor sit amet, consectetur.",
                     // Logo="/wwwroot/images/paddypower_casino.png",
                     Url="https://wavefitnessproject.gr/",
                     Primary=true
                 },
                 new Bookmaker{
                     Name="Betano Casino",
-                    Code="GG11AB76GH98P0007QQ",
+                    Code="GG11AB76GH",
                     Price=500,
                     ButtonText="Activate Bonus",
-                    Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+                    Description="Lorem ipsum dolor sit amet, consectetur.",
                     // Logo="/wwwroot/images/betano_casino.png",
                     Url="https://wavefitnessproject.gr/",
                     Primary=false
                 },
                 new Bookmaker{
                     Name="Tsam Casino",
-                    Code="GG11AB76GH98P0007QQ",
+                    Code="GG11AB76GH",
                     Price=250,
                     ButtonText="Activate Bonus",
-                    Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+                    Description="Lorem ipsum dolor sit amet, consectetur.",
                     // Logo="/wwwroot/images/tsam_casino.png",
                     Url="https://wavefitnessproject.gr/",
                     Primary=false
