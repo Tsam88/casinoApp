@@ -27,8 +27,6 @@ function deleteBookmaker(bookmakerId) {
         },
         error: function(response) {
             $('*').css({'cursor' : 'default'});
-
-            console.log('error');
         }
     });
 }
@@ -41,8 +39,6 @@ function getBookmakers() {
         type:'GET',
         async: true, //blocks window close if false
         success: function(result) {
-            console.log(result);
-
             $("#bookmakersTable").empty();
 
             $.each(result, function (key, value) {  
@@ -56,6 +52,9 @@ function getBookmakers() {
                         </th>
                         <td class="px-6 py-4">
                             <a href="${href}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">${value.name}</a>
+                        </td>
+                        <td class="px-6 py-4">
+                            ${value.price}
                         </td>
                         <td class="px-6 py-4">
                             ${value.logo}

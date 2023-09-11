@@ -36,9 +36,9 @@ namespace Docker.NetCore.MySql.Data
                     Name="Unibet Casino",
                     Code="GG11AB76GH98P0007QQ",
                     Price=99.99M,
-                    ButtonText="Activeaza Bonusul",
+                    ButtonText="Activate Bonus",
                     Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-                    Logo="/wwwroot/images/unibet_casino.png",
+                    // Logo="/wwwroot/images/unibet_casino.png",
                     Url="https://wavefitnessproject.gr/",
                     Primary=false
                 },
@@ -46,9 +46,9 @@ namespace Docker.NetCore.MySql.Data
                     Name="Paddypower Casino",
                     Code="GG11AB76GH98P0007QQ",
                     Price=500,
-                    ButtonText="Activeaza Bonusul",
+                    ButtonText="Activate Bonus",
                     Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-                    Logo="/wwwroot/images/paddypower_casino.png",
+                    // Logo="/wwwroot/images/paddypower_casino.png",
                     Url="https://wavefitnessproject.gr/",
                     Primary=true
                 },
@@ -56,9 +56,9 @@ namespace Docker.NetCore.MySql.Data
                     Name="Betano Casino",
                     Code="GG11AB76GH98P0007QQ",
                     Price=500,
-                    ButtonText="Activeaza Bonusul",
+                    ButtonText="Activate Bonus",
                     Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-                    Logo="/wwwroot/images/betano_casino.png",
+                    // Logo="/wwwroot/images/betano_casino.png",
                     Url="https://wavefitnessproject.gr/",
                     Primary=false
                 },
@@ -66,9 +66,9 @@ namespace Docker.NetCore.MySql.Data
                     Name="Tsam Casino",
                     Code="GG11AB76GH98P0007QQ",
                     Price=250,
-                    ButtonText="Activeaza Bonusul",
+                    ButtonText="Activate Bonus",
                     Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-                    Logo="/wwwroot/images/tsam_casino.png",
+                    // Logo="/wwwroot/images/tsam_casino.png",
                     Url="https://wavefitnessproject.gr/",
                     Primary=false
                 }

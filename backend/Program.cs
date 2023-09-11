@@ -1,6 +1,9 @@
 ﻿﻿using Docker.NetCore.MySql.Data;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore;
+// using Microsoft.ML;
+// using Microsoft.ML.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();

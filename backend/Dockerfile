@@ -36,7 +36,7 @@ RUN ["dotnet", "publish", "-c", "Release", "-o", "/build"]
 
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/aspnet:6.0
 
-WORKDIR /app
+WORKDIR /backend
 COPY --from=publisher /build .
 
 CMD ["dotnet", "aspnetapp.dll"]

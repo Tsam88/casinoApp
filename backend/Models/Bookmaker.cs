@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Docker.NetCore.MySql.Models
 {
@@ -22,8 +23,11 @@ namespace Docker.NetCore.MySql.Models
         [StringLength(255)]
         public string Description { get; set; }
 
-        [StringLength(255)]
-        public string Logo { get; set; }
+        // [StringLength(255)]
+        public byte[] Logo { get; set; }
+
+        // [NotMapped]
+        // public IFormFile LogoFile { get; set; }
 
         [StringLength(255)]
         public string Url { get; set; }
