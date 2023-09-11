@@ -1,6 +1,6 @@
 ## Installation Guide
 
-Run the commands below::
+Run the commands below:
 
 ```
 $ docker compose up build

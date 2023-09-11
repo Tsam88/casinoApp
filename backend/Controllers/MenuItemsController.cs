@@ -90,8 +90,6 @@ namespace Docker.NetCore.MySql.Controllers
                 return BadRequest(ModelState);
             }
     
-            // Console.WriteLine(menuItem);
-
             _context.MenuItems.Add(menuItem);
             await _context.SaveChangesAsync();
 

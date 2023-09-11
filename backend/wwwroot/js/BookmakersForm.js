@@ -43,8 +43,6 @@ function saveBookmaker() {
         "Primary": $('#primary').is(":checked"),
     };
 
-    console.log(data);
-
     if (isNaN(bookmakerId)) {
         method = 'POST';
     } else {
@@ -54,32 +52,28 @@ function saveBookmaker() {
 
 
 
-    let formData = new FormData();
+    // let formData = new FormData();
 
-    formData.append("Name", $('#name').val());
-    formData.append("Code", $('#code').val());
-    formData.append("Price", $('#price').val());
-    formData.append("ButtonText", $('#buttonText').val());
-    formData.append("Description", $('#description').val());
-    formData.append("Url", $('#url').val());
-    formData.append("Primary", $('#primary').is(":checked"));
-    // formData.append("Logo", $('#logo')[0].files[0]);
+    // formData.append("Name", $('#name').val());
+    // formData.append("Code", $('#code').val());
+    // formData.append("Price", $('#price').val());
+    // formData.append("ButtonText", $('#buttonText').val());
+    // formData.append("Description", $('#description').val());
+    // formData.append("Url", $('#url').val());
+    // formData.append("Primary", $('#primary').is(":checked"));
+    // // formData.append("Logo", $('#logo')[0].files[0]);
     
 
-    if ($('#logo').val()) {
-        formData.append("Logo", $('#logo')[0].files[0]);
-        // formData.append("Logo", $('#logo')[0].files[0].name);
-        // formData.append("LogoFile", $('#logo')[0].files[0]);
-    }
-
-
-    console.log('API url: ' + apiUrl);
+    // if ($('#logo').val()) {
+    //     formData.append("Logo", $('#logo')[0].files[0]);
+    //     // formData.append("Logo", $('#logo')[0].files[0].name);
+    //     // formData.append("LogoFile", $('#logo')[0].files[0]);
+    // }
 
     $.ajax({
         url: apiUrl,
         type: method,
         data: JSON.stringify(data),
-        // data: data,
         contentType: 'application/json',
         processData: false,
         dataType: "JSON",

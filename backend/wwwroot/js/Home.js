@@ -61,10 +61,6 @@ $(document).ready(function(){
     });
 });
 
-function redirectBack(){
-    window.location.replace(document.referrer);
-}
-
 function displaySubmenu(){
     document.getElementById('dropdownNavbar').style.display = 'block';
 }
